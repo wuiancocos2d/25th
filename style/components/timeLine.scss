@@ -1,9 +1,10 @@
 .timeContainer {
-    
+    width: 960px;
+    margin: 0 auto;
     .timeLine {
         height: 100%;
         display: inline-block;
-        padding: 0 50%;
+        //padding: 0 50%;
         text-align: center;
         white-space: nowrap;
         position: relative;
@@ -19,6 +20,8 @@
             position: relative;
             width: 116px;
             display: inline-block;
+            margin: 0 auto;
+            left: 58px;
         }
     }
     .pointer {
@@ -35,7 +38,13 @@
         margin-left: -7px;
         top: auto;
         width: 0;
-        
+        left: 50%;
+        top: 5px;
+        position: relative;
     }
 
+}
+.draggable {
+    touch-action: none;
+    user-select: none;
 }
